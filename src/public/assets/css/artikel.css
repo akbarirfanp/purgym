@@ -1,0 +1,135 @@
+body {
+  font-family: Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  color: #3f3e3ee2; 
+}
+
+.author {
+  color: #eb600a;
+}
+
+article {
+  line-height: 1.6;
+}
+
+article img {
+  display: block;
+  margin: 0 auto 20px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(25, 25, 29, 0.5); 
+}
+
+article p {
+  margin-bottom: 20px;
+  color: #010007; 
+}
+
+
+.wrapper {
+  background: var(--white);
+  padding: 2rem;
+  max-width: 576px;
+  width: 100%;
+  border-radius: .75rem;
+  box-shadow: var(--shadow);
+  text-align: center;
+}
+.wrapper h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.rating {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-gap: .5rem;
+  font-size: 2rem;
+  color: var(--yellow);
+  margin-bottom: 2rem;
+}
+.rating .star {
+  cursor: pointer;
+}
+.rating .star.active {
+  opacity: 0;
+  animation: animate .5s calc(var(--i) * .1s) ease-in-out forwards;
+}
+
+@keyframes animate {
+  0% {
+    opacity: 0;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
+.rating .star:hover {
+  transform: scale(1.1);
+}
+textarea {
+  width: 100%;
+  background: blanchedalmond;
+  padding: 1rem;
+  border-radius: .5rem;
+  border: none;
+  outline: none;
+  resize: none;
+  margin-bottom: .5rem;
+}
+.btn-group {
+  display: flex;
+  grid-gap: .5rem;
+  align-items: center;
+}
+.btn-group .btn {
+  padding: .75rem 1rem;
+  border-radius: .5rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: .875rem;
+  font-weight: 500;
+}
+.btn-group .btn.submit {
+  background: silver;
+  color: black;
+}
+.btn-group .btn.cancel {
+  background: silver;
+  color: black
+}
+
+.btn.btn-secondary {
+  background-color:  black;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
